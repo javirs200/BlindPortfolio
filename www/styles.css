@@ -93,7 +93,7 @@ section#tools {
   flex-direction: column;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
-  width: 25%;
+  width: auto;
   transition: 1s ease;
   * {
     margin: 0;
@@ -167,7 +167,7 @@ img.placeholder {
 
 .project-card {
   perspective: 1000px;
-  width: 250px;
+  width: 20rem;
   height: 300px;
   margin: 1rem auto;
 }

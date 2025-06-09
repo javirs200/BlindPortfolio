@@ -24,7 +24,11 @@ function scrollFunction() {
 document.querySelectorAll('.project-card').forEach(card => {
     console.log(card);
   // si el raton entra en la tarjeta, se le da la clase 'flipped'
-  card.addEventListener('click', () => {
+  card.addEventListener('mouseover', () => {
+    card.classList.toggle('flipped');
+  });
+
+  card.addEventListener('mouseout', () => {
     card.classList.toggle('flipped');
   });
 });
