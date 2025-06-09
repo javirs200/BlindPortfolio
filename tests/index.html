@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: auto;
+
+        width: 80%;
+        height: 80vh;
+
+        overflow-x: hidden;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+
+        transition: 0.4s;
+      }
+
+      .blue {
+        background-color: lightblue;
+        height: 95%;
+        aspect-ratio: 1/2;
+      }
+
+      .green {
+        background-color: lightgreen;
+        height: 50%;
+        aspect-ratio: 2/1;
+      }
+
+      .blue,
+      .green {
+        display: inline-block;
+        margin: 5px;
+        scroll-snap-align: center;
+      }
+
+      #header {
+        background-color: #f1f1f1; /* Grey background */
+        padding: 50px 10px; /* Some padding */
+        color: black;
+        text-align: center; /* Centered text */
+        font-size: 90px; /* Big font size */
+        font-weight: bold;
+        position: fixed; /* Fixed position - sit on top of the page */
+        top: 0;
+        width: 80%; /* Full width */
+        transition: 0.4s; /* Add a transition effect (when scrolling - and font size is decreased) */
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div id="container">
+      <div id="header">Header</div>
+      <div class="blue"></div>
+      <div class="green"></div>
+      <div class="blue"></div>
+      <div class="green"></div>
+      <div class="blue"></div>
+      <div class="green"></div>
+      <div class="blue"></div>
+    </div>
+  </body>
+  <script>
+    // When the user scrolls down 50px from the top of the document, resize the header's font size
+    
+    let container = document.getElementById("container");
+
+    let header = document.getElementById("header");
+    
+    container.onscroll = function () {
+      scrollFunction();
+    };
+
+    header.onmouseover = function () {
+      if(header.style.fontSize == "30px"){
+        header.style.fontSize = "90px";
+      } 
+    };
+
+
+    // Function to change the font size of the header based on scroll position
+    function scrollFunction() {
+      if (
+        container.scrollTop > 50 ||
+        container.scrollTop > 50
+      ) {
+        header.style.fontSize = "30px";
+      } else {
+        header.style.fontSize = "90px";
+      }
+    }
+  </script>
+</html>
