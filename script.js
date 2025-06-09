@@ -1,12 +1,8 @@
 // When the user scrolls down 50px from the top of the document, resize the header's font size
 
-let container = document.getElementById("container");
+let container = document.getElementById("projects-types-container");
 
 let header = document.getElementById("header");
-
-container.onscroll = function () {
-  scrollFunction();
-};
 
 header.onmouseover = function () {
   if (header.style.fontSize == "30px") {
@@ -22,3 +18,13 @@ function scrollFunction() {
     header.style.fontSize = "90px";
   }
 }
+
+
+// Card flip on click
+document.querySelectorAll('.project-card').forEach(card => {
+    console.log(card);
+  // si el raton entra en la tarjeta, se le da la clase 'flipped'
+  card.addEventListener('click', () => {
+    card.classList.toggle('flipped');
+  });
+});
