@@ -22,7 +22,6 @@ function scrollFunction() {
 
 // Card flip on click
 document.querySelectorAll('.project-card').forEach(card => {
-    console.log(card);
   // si el raton entra en la tarjeta, se le da la clase 'flipped'
   card.addEventListener('mouseover', () => {
     card.classList.toggle('flipped');

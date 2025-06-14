@@ -1,0 +1,8 @@
+<!-- Diseño base vectorial, simple y en colores claros -->
+<svg width="350" height="250" viewBox="0 0 350 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="350" height="250" rx="32" fill="#E3F6FC"/>
+  <circle cx="175" cy="130" r="90" fill="#BEE9F7"/>
+  <rect x="75" y="95" width="200" height="80" rx="16" fill="#A7D8F5"/>
+  <text x="175" y="125" text-anchor="middle" fill="#3A6EA5" font-size="32" font-family="Arial" font-weight="bold">Project</text>
+  <text x="175" y="165" text-anchor="middle" fill="#3A6EA5" font-size="32" font-family="Arial" font-weight="bold">Placeholder</text>
+</svg>
