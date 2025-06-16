@@ -96,9 +96,8 @@ section#tools {
   overflow-y: scroll;
   scroll-snap-type: y proximity;
   scroll-behavior: smooth;
-  scrollbar-width: none;
-
-  transition: 0.4s;
+  
+  transition: 0.9s;
 }
 
 .projects-type-title {
